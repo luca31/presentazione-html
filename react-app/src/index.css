@@ -11,9 +11,6 @@ h1 {
   font-size: 4.5rem;
   line-height: 140%;
 }
-code{
-  font-size:18px;
-}
 
 .slider-panel{
   transform:none;
@@ -28,16 +25,13 @@ code{
   user-select:none;
   -webkit-user-select:none;
   -ms-user-select:none;
+  cursor: pointer;
 }
 .arrow_up{
   top:10px;
 }
 .arrow_down{
   bottom:10px;
-}
-
-.arrow_up>a,.arrow_down>a{
-  cursor:pointer;
 }
 
 .row{
