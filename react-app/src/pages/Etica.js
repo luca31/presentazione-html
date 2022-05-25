@@ -17,10 +17,15 @@ const Treni = props => {
 
   return (
     <PanelsWrapper panels={panels} panelUp={panelUp} panelDown={panelDown} currentPanel={currentPanel} setCurrentPanel={setCurrentPanel}>
-      <Panel className="black white-text" ref={panels.current[0]} panelDown={panelDown}>
+      <Panel className="black white-text" style={{background: "linear-gradient(45deg,  rgb(0 176 255 / 85%), rgb(224 64 251 / 85%)), url(https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)", backgroundSize: "cover"}} ref={panels.current[0]} panelDown={panelDown}>
         <div className="center" style={{width:"100%"}}>
-          <h1 style={{fontFamily: "Poppins, sans-serif", background:"-webkit-linear-gradient(45deg, #00b0ff, #e040fb)", backgroundClip:"text", WebkitBackgroundClip:"text", textFillColor:"transparent", WebkitTextFillColor:"transparent"}}>Intelligenza artificiale e<br />l'etica</h1>
-          <Link fun={props.changePage} page="home" color="#fff">...torna indietro</Link>
+          <h1 style={{fontFamily: "Poppins, sans-serif"}}>L'Intelligenza Artificiale e<br />l'Etica</h1>
+          <Link fun={props.changePage} color="#fff" page="home">
+            <div style={{display: "flex", alignItems:"center"}}>
+              <i class="material-icons medium">chevron_left</i>
+              Torna indietro
+            </div>
+          </Link>
         </div>
       </Panel>
 
@@ -47,18 +52,25 @@ const Treni = props => {
       <Panel className="black white-text" ref={panels.current[4]} panelDown={panelDown} panelUp={panelUp}>
         <div className="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
           <h3>Rischio deskilling?</h3>
-          <p>Ma che cos'è effettivamente il rischio di deskilling? Questo è il rischio che macchinari innovativi che svolgono compiti al posto nostro rendano l'uomo sempre più incapace di compiere determinati compiti, ossia che un giorno non saremo più in grado di svolgere questi determinati compiti qualora ci fosse la necessità.</p>
+          <p>Ma che cos'è effettivamente il rischio di deskilling? È il rischio che macchinari innovativi che svolgono compiti al posto nostro rendano l'uomo sempre più incapace di compiere determinati compiti, ossia che un giorno non saremo più in grado di svolgere questi determinati compiti qualora ci fosse la necessità.</p>
         </div>
       </Panel>
 
       <Panel className="black white-text" ref={panels.current[5]} panelUp={panelUp}>
-        <div className="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
+        <div className="col s5 offset-s3">
           <h3>About us</h3>
           <p>
             Alessandro Negro<br />
             Luca Colli
           </p>
-          <Link fun={props.changePage} page="home">...torna indietro</Link>
+        </div>
+        <div className="col s3 pull-s1">
+          <Link fun={props.changePage} color="#fff" page="home">
+            <div style={{display: "flex", alignItems:"center"}}>
+              <i class="material-icons medium">chevron_left</i>
+              Torna indietro
+            </div>
+          </Link>
         </div>
       </Panel>
     </PanelsWrapper>

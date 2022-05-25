@@ -24,28 +24,31 @@ const Home = props => {
       </Panel>
 
       <Panel className="grey lighten-2 dark-text" ref={panels.current[1]} panelUp={panelUp} panelDown={panelDown}>
-        <div className="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-          <p>L'intelligenza Artificiale si sta sviluppando sempre di più, sia qualitativamente: diventando sempre più efficace, precisa ed appunto, intelligente; sia quantitativamente: entrando sempre più nelle nostre vite quotidiane.</p>
+        <div className="col s5 offset-s1">
+          <p>L'Intelligenza Artificiale è soggetto di studi e sviluppi sempre più approfonditi e costanti:</p>
+          <p>Da un punto di vista qualitativo, diventando sempre più efficace, precisa e, appunto, intelligente;</p>
+          <p>Da un punto di vista quantitativo, entrando a far parte sempre di più nelle nostre vite quotidiane.</p>
         </div>
+        <img className="grey white-text darken-4 col s3 pull-s1" style={{borderRadius:20, padding:20}} src={require("../images/icona-ai.png")} alt="Intelligenza Artificiale" />
       </Panel>
 
       <Panel className="grey lighten-2 dark-text" ref={panels.current[2]} panelUp={panelUp} panelDown={panelDown}>
         <div className="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-          <p>Questo ingresso nella vita di tutti giorni sta portando ad un cambio di paradigma in molte delle attività che svolgiamo regolarmente, rivoluzionando ad esempio il nostro modo di spostarci ed i mezzi di trasporto che utilizziamo. L'industria del trasporto e le sue trasformazioni hanno profondamente influenzato la storia umana, oltre ad essere “la vetrina” del suo progresso tecnologico.</p>
+          <p>Questo ingresso nella vita di tutti giorni sta portando ad un cambio di paradigma in molte delle attività che svolgiamo regolarmente rivoluzionando, ad esempio, il nostro modo di spostarci ed i mezzi di trasporto che utilizziamo. L'industria del trasporto e le sue trasformazioni hanno profondamente influenzato la storia umana, oltre ad essere la “vetrina” del suo progresso tecnologico.</p>
         </div>
       </Panel>
       
       <Panel className="black white-text" ref={panels.current[3]} panelUp={panelUp} panelDown={panelDown}>
-        <div className="col s4 offset-s1">
+        <div className="col s5 offset-s1">
           <span>
-            <h3>Intelligenza Artificiale e applicazioni</h3>
+            <h3>L'intelligenza artificiale<br />e le sue applicazioni</h3>
           </span>
         </div>
-        <div className="grey darken-4 col s5 pull-s1 left-align" style={{borderRadius:20,padding:20}}>
+        <div className="grey darken-4 col s4 pull-s1 left-align" style={{borderRadius:20, padding:20}}>
           Approfondisci:<br /><br />
-          <Link fun={props.changePage} color="#fff" page={"etica"}>- Etica</Link><br />
-          <Link fun={props.changePage} color="#fff" page={"treni"}>- Sistema ferroviario</Link><br />
-          <Link fun={props.changePage} color="#fff" page={"aviazione"}>- Aviazione</Link>
+          <Link fun={props.changePage} color="#fff" page={"etica"}>&nbsp;•&nbsp;&nbsp;Etica</Link><br />
+          <Link fun={props.changePage} color="#fff" page={"treni"}>&nbsp;•&nbsp;&nbsp;Sistema ferroviario</Link><br />
+          <Link fun={props.changePage} color="#fff" page={"aviazione"}>&nbsp;•&nbsp;&nbsp;Aviazione</Link>
         </div>
       </Panel>
 

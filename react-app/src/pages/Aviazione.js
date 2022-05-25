@@ -17,10 +17,15 @@ const Aviazione = props => {
 
   return (
     <PanelsWrapper panels={panels} panelUp={panelUp} panelDown={panelDown} currentPanel={currentPanel} setCurrentPanel={setCurrentPanel}>
-      <Panel className="black white-text" ref={panels.current[0]} panelDown={panelDown}>
+      <Panel className="black white-text" style={{background: "linear-gradient(45deg,  rgb(0 176 255 / 85%), rgb(224 64 251 / 85%)), url(https://images.pexels.com/photos/731217/pexels-photo-731217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)", backgroundSize: "cover"}} ref={panels.current[0]} panelDown={panelDown}>
         <div className="center" style={{width:"100%"}}>
-          <h1 style={{fontFamily: "Poppins, sans-serif", background:"-webkit-linear-gradient(45deg, #00b0ff, #e040fb)", backgroundClip:"text", WebkitBackgroundClip:"text", textFillColor:"transparent", WebkitTextFillColor:"transparent"}}>Come l'IA sta rivoluzionando<br />l'industria aeronautica</h1>
-          <Link fun={props.changePage} page="home" color="#fff">...torna indietro</Link>
+          <h1 style={{fontFamily: "Poppins, sans-serif"}}>Come l'IA sta rivoluzionando<br />l'Industria Aeronautica</h1>
+          <Link fun={props.changePage} color="#fff" page="home">
+            <div style={{display: "flex", alignItems:"center"}}>
+              <i class="material-icons medium">chevron_left</i>
+              Torna indietro
+            </div>
+          </Link>
         </div>
       </Panel>
 
@@ -66,12 +71,20 @@ const Aviazione = props => {
       </Panel>
 
       <Panel className="grey lighten-2 dark-text" ref={panels.current[7]} panelUp={panelUp}>
-        <div className="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
+        <div className="col s5 offset-s3">
           <h3>About us</h3>
           <p>
             Alessandro Negro<br />
             Luca Colli
           </p>
+        </div>
+        <div className="col s3 pull-s1">
+          <Link fun={props.changePage} color="#rgba(0,0,0,0.87)" page="home">
+            <div style={{display: "flex", alignItems:"center"}}>
+              <i class="material-icons medium">chevron_left</i>
+              Torna indietro
+            </div>
+          </Link>
         </div>
       </Panel>
     </PanelsWrapper>

@@ -17,40 +17,51 @@ const Treni = props => {
 
   return (
     <PanelsWrapper panels={panels} panelUp={panelUp} panelDown={panelDown} currentPanel={currentPanel} setCurrentPanel={setCurrentPanel}>
-      <Panel className="black white-text" ref={panels.current[0]} panelDown={panelDown}>
+      <Panel className="black white-text" style={{background: "linear-gradient(45deg,  rgb(0 176 255 / 85%), rgb(224 64 251 / 85%)), url(https://images.pexels.com/photos/253647/pexels-photo-253647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)", backgroundSize: "cover"}} ref={panels.current[0]} panelDown={panelDown}>
         <div className="center" style={{width:"100%"}}>
-          <h1 style={{fontFamily: "Poppins, sans-serif", background:"-webkit-linear-gradient(45deg, #00b0ff, #e040fb)", backgroundClip:"text", WebkitBackgroundClip:"text", textFillColor:"transparent", WebkitTextFillColor:"transparent"}}>Intelligenza artificiale e<br />il sistema ferroviario</h1>
-          <Link fun={props.changePage} page="home" color="#fff">...torna indietro</Link>
+          <h1 style={{fontFamily: "Poppins, sans-serif"}}>L'Intelligenza Artificiale e<br />il Sistema Ferroviario</h1>
+          <Link fun={props.changePage} color="#fff" page="home">
+            <div style={{display: "flex", alignItems:"center"}}>
+              <i class="material-icons medium">chevron_left</i>
+              Torna indietro
+            </div>
+          </Link>
         </div>
       </Panel>
 
       <Panel className="grey lighten-2 dark-text" ref={panels.current[1]} panelDown={panelDown} panelUp={panelUp}>
         <div className="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-          <p>L'IA sta portando un cambio di paradigma anche per quanto riguarda il trasporto ferroviario:
-tecnologie avanzate come Internet of Things, Cloud Computing, Big Data e Beidou Satellite Positioning System, sviluppando allo stesso tempo treni intelligenti ad alta velocità.</p>
+          <p>L'IA sta portando a un forte cambio di rotta anche per quanto riguarda il trasporto ferroviario: grazie a essa sono state create tecnologie avanzate come l'Internet of Things, il Cloud Computing, i Big Data e il Beidou Satellite Positioning System, sviluppando allo stesso tempo treni intelligenti ad alta velocità.</p>
         </div>
       </Panel>
 
       <Panel className="black white-text" ref={panels.current[2]} panelDown={panelDown} panelUp={panelUp}>
         <div className="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-          <p>Nuovi treni ad alta velocità si servono dell'ia per il controllo ed un supporto alla guida come: controllo di trazione, di comando, sia per quanto riguarda comunicazione e sicurezza.</p>
+          <p>I nuovi treni ad alta velocità si servono, dunque, dell'intelligenza artificiale per garantire un controllo e un supporto alla guida. Alcune tecnologie degne di nota sono controllo di trazione, controllo di comando e strumentazioni di comunicazione e sicurezza.</p>
         </div>
       </Panel>
 
       <Panel className="grey lighten-2 dark-text" ref={panels.current[3]} panelDown={panelDown} panelUp={panelUp}>
         <div className="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-          <p>Inoltre L'IA è utilizzata per altre funzioni non direttamente connessi alla guida, ma volti a migliorare l'esperienza collettiva di viaggiatori e operatori, come ad esempio il conteggio automatico dei passeggeri o la raccolta di dati per migliorare le esperienze fornite ai viaggiatori.</p>
+          <p>L'intelligenza artificiale è, inoltre, utilizzata per altre funzioni non direttamente connessi alla guida, ma volte a migliorare l'esperienza collettiva di viaggiatori e operatori, come ad esempio il conteggio automatico dei passeggeri o la raccolta di dati. Tramite l'utilizzo di tutte queste innovazioni ci si pone lo scopo di migliorare l'esperienza di viaggio fornita ai passeggeri.</p>
         </div>
       </Panel>
 
       <Panel className="black white-text" ref={panels.current[4]} panelUp={panelUp}>
-        <div className="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
+        <div className="col s5 offset-s3">
           <h3>About us</h3>
           <p>
             Alessandro Negro<br />
             Luca Colli
           </p>
-          <Link fun={props.changePage} page="home">...torna indietro</Link>
+        </div>
+        <div className="col s3 pull-s1">
+          <Link fun={props.changePage} color="#fff" page="home">
+            <div style={{display: "flex", alignItems:"center"}}>
+              <i class="material-icons medium">chevron_left</i>
+              Torna indietro
+            </div>
+          </Link>
         </div>
       </Panel>
     </PanelsWrapper>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Panel = React.forwardRef((props, ref) => {
   return (
-    <div className={"slider-panel valign-wrapper row " + props.className} ref={ref}>
+    <div className={"slider-panel valign-wrapper row " + props.className} style={props.style} ref={ref}>
       {
         props.panelUp ? <div className="arrow_up"><i onClick={props.panelUp} className="material-icons medium">keyboard_arrow_up</i></div> : ""
       }
