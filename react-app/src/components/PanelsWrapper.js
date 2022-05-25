@@ -26,11 +26,11 @@ const PanelsWrapper = props => {
       if(props.currentPanel === -1) {
         tmp_currentPanel = props.panels.current.findIndex(el => el.current.getBoundingClientRect().top === 0)
         props.setCurrentPanel(tmp_currentPanel);
+      } else if(props.currentPanel === 0) {
+        gsap.timeline()
+          .to(props.panels.current[tmp_currentPanel].current.children, {duration:0, opacity:0, display:"block"})
+          .to(props.panels.current[tmp_currentPanel].current.children, {duration:1.5, opacity:1, display:"block"});
       }
-
-      gsap.timeline()
-        .to(props.panels.current[tmp_currentPanel].current, {duration:1, opacity:1})
-        .to(props.panels.current[tmp_currentPanel].current.children, {duration:.5, opacity:1, display: "block"});
     }
   }, [props, props.panels, props.currentPanel])
 

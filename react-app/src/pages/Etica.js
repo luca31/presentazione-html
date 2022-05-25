@@ -22,7 +22,7 @@ const Treni = props => {
           <h1 style={{fontFamily: "Poppins, sans-serif"}}>L'Intelligenza Artificiale e<br />l'Etica</h1>
           <Link fun={props.changePage} color="#fff" page="home">
             <div style={{display: "flex", alignItems:"center"}}>
-              <i class="material-icons medium">chevron_left</i>
+              <i className="material-icons medium">chevron_left</i>
               Torna indietro
             </div>
           </Link>
@@ -67,7 +67,7 @@ const Treni = props => {
         <div className="col s3 pull-s1">
           <Link fun={props.changePage} color="#fff" page="home">
             <div style={{display: "flex", alignItems:"center"}}>
-              <i class="material-icons medium">chevron_left</i>
+              <i className="material-icons medium">chevron_left</i>
               Torna indietro
             </div>
           </Link>
