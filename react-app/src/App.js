@@ -10,10 +10,10 @@ function App() {
 
   return (
     <>
-      { page === 'home' ? <Home changePage={changePage} /> : null }
-      { page === 'aviazione' ? <Aviazione changePage={changePage} /> : null }
-      { page === 'treni' ? <Treni changePage={changePage} /> : null }
-      { page === 'etica' ? <Etica changePage={changePage} /> : null }
+      { page === 'home' ? <Home page={page} changePage={changePage} /> : null }
+      { page === 'aviazione' ? <Aviazione page={page} changePage={changePage} /> : null }
+      { page === 'treni' ? <Treni page={page} changePage={changePage} /> : null }
+      { page === 'etica' ? <Etica page={page} changePage={changePage} /> : null }
     </>
   );
 }

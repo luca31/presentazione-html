@@ -7,9 +7,10 @@ const PanelsWrapper = props => {
   const keyDown = e => {
     if (e.keyCode === 38) props.panelUp();
     else if (e.keyCode === 40) props.panelDown();
+    else if (e.keyCode === 37 && props.page !== "home") props.changePage("home");
   };
 
-  const resize = e => {
+  const resize = () => {
     gsap.to(
       props.panels.current.map((el) => el.current),
       {

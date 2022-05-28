@@ -16,7 +16,7 @@ const Treni = props => {
   const panelDown = () => panelDownUtility(panels, currentPanel, setCurrentPanel)
 
   return (
-    <PanelsWrapper panels={panels} panelUp={panelUp} panelDown={panelDown} currentPanel={currentPanel} setCurrentPanel={setCurrentPanel}>
+    <PanelsWrapper page={props.page} changePage={props.changePage} panels={panels} panelUp={panelUp} panelDown={panelDown} currentPanel={currentPanel} setCurrentPanel={setCurrentPanel}>
       <Panel className="black white-text" style={{background: "linear-gradient(45deg,  rgb(0 176 255 / 85%), rgb(224 64 251 / 85%)), url(https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)", backgroundSize: "cover"}} ref={panels.current[0]} panelDown={panelDown}>
         <div className="center" style={{width:"100%"}}>
           <h1 style={{fontFamily: "Poppins, sans-serif"}}>L'Intelligenza Artificiale e<br />l'Etica</h1>

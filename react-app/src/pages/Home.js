@@ -16,7 +16,7 @@ const Home = props => {
   const panelDown = () => panelDownUtility(panels, currentPanel, setCurrentPanel)
 
   return (
-    <PanelsWrapper panels={panels} panelUp={panelUp} panelDown={panelDown} currentPanel={currentPanel} setCurrentPanel={setCurrentPanel}>
+    <PanelsWrapper page={props.page} changePage={props.changePage} panels={panels} panelUp={panelUp} panelDown={panelDown} currentPanel={currentPanel} setCurrentPanel={setCurrentPanel}>
       <Panel className="black white-text" ref={panels.current[0]} panelDown={panelDown}>
         <div className="center" style={{width:"100%"}}>
           <h1 style={{fontFamily: "Poppins, sans-serif", background:"-webkit-linear-gradient(45deg, #00b0ff, #e040fb)", backgroundClip:"text", WebkitBackgroundClip:"text", textFillColor:"transparent", WebkitTextFillColor:"transparent"}}>Cambio di Paradigma:<br />AI e trasporti</h1>
