@@ -17,9 +17,9 @@ const Home = props => {
 
   return (
     <PanelsWrapper page={props.page} changePage={props.changePage} panels={panels} panelUp={panelUp} panelDown={panelDown} currentPanel={currentPanel} setCurrentPanel={setCurrentPanel}>
-      <Panel className="black white-text" ref={panels.current[0]} panelDown={panelDown}>
+      <Panel className="black white-text" ref={panels.current[0]} panelDown={panelDown} info={props.changePage}>
         <div className="center" style={{width:"100%"}}>
-          <h1 style={{fontFamily: "Poppins, sans-serif", background:"-webkit-linear-gradient(45deg, #00b0ff, #e040fb)", backgroundClip:"text", WebkitBackgroundClip:"text", textFillColor:"transparent", WebkitTextFillColor:"transparent"}}>Cambio di Paradigma:<br />AI e trasporti</h1>
+          <h1 style={{fontFamily: "Poppins, sans-serif", background:"-webkit-linear-gradient(45deg, #00b0ff, #e040fb)", backgroundClip:"text", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent"}}>Cambio di Paradigma:<br />AI e trasporti</h1>
         </div>
       </Panel>
 
@@ -41,14 +41,30 @@ const Home = props => {
       <Panel className="black white-text" ref={panels.current[3]} panelUp={panelUp} panelDown={panelDown}>
         <div className="col s5 offset-s1">
           <span>
-            <h3>L'intelligenza artificiale<br />e le sue applicazioni</h3>
+            <h3>Le Applicazioni dell'<br />Intelligenza Artificiale</h3>
           </span>
         </div>
-        <div className="grey darken-4 col s4 pull-s1 left-align" style={{borderRadius:20, padding:20}}>
-          Approfondisci:<br /><br />
-          <Link fun={props.changePage} color="#fff" page={"etica"}>&nbsp;•&nbsp;&nbsp;Etica</Link><br />
-          <Link fun={props.changePage} color="#fff" page={"treni"}>&nbsp;•&nbsp;&nbsp;Sistema ferroviario</Link><br />
-          <Link fun={props.changePage} color="#fff" page={"aviazione"}>&nbsp;•&nbsp;&nbsp;Aviazione</Link>
+        <div className="col s4 pull-s1 left-align" style={{borderRadius:20, padding:20}}>
+
+          <div className="left">
+            <Link fun={props.changePage} color="rgba(0,0,0,0.87)" page={"etica"}>
+              <div className="grey lighten-2" style={{borderRadius:999, padding:20, width: 300, textAlign: "center"}}>L'Etica</div>
+            </Link>
+          </div>
+
+          <div className="right" style={{margin:"50px 0"}}>
+            <Link fun={props.changePage} color="rgba(0,0,0,0.87)" page={"treni"}>
+              <div className="grey lighten-2" style={{borderRadius:999, padding:20, width: 300, textAlign: "center"}}>Il Sistema Ferroviario</div>
+            </Link>
+          </div>
+
+
+          <div className="left">
+            <Link fun={props.changePage} color="rgba(0,0,0,0.87)" page={"aviazione"}>
+              <div className="grey lighten-2" style={{borderRadius:999, padding:20, width: 300, textAlign: "center"}}>L'Aviazione</div>
+            </Link>
+          </div>
+
         </div>
       </Panel>
 
