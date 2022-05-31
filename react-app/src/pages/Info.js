@@ -35,7 +35,7 @@ const Info = props => {
       <Panel className="black white-text" ref={panels.current[1]} panelDown={panelDown} panelUp={panelUp}>
         <div className="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
           <h3>Risorse utilizzate</h3>
-          <p>Le immagini presenti all'interno di questo sito sono state ricavate da <a href={"https://www.pexels.com"} target={"_blank"}>Pexels</a>.</p>
+          <p>Le immagini presenti all'interno di questo sito sono state ricavate da <a href={"https://www.pexels.com"} target={"_blank"} rel="noreferrer">Pexels</a>.</p>
         </div>
       </Panel>
 
