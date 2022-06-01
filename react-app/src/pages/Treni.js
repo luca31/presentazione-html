@@ -31,7 +31,7 @@ const Treni = props => {
 
       <Panel className="grey lighten-2 dark-text" ref={panels.current[1]} panelDown={panelDown} panelUp={panelUp}>
         <div className="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-          <p>L'IA sta portando a un forte cambio di rotta anche per quanto riguarda il trasporto ferroviario: grazie a essa sono state create tecnologie avanzate come l'Internet of Things, il Cloud Computing, i Big Data e il Beidou Satellite Positioning System, sviluppando allo stesso tempo treni intelligenti ad alta velocità.</p>
+          <p>L'IA sta portando a un forte cambio di rotta anche per quanto riguarda il trasporto ferroviario: grazie alla sinergia tra questa e tecnologie avanzate come l'Internet of Things, il Cloud Computing, i Big Data e il Beidou Satellite Positioning System è stato reso possibile lo sviluppo di treni intelligenti ad alta velocità.</p>
         </div>
       </Panel>
 
@@ -43,7 +43,7 @@ const Treni = props => {
 
       <Panel className="grey lighten-2 dark-text" ref={panels.current[3]} panelDown={panelDown} panelUp={panelUp}>
         <div className="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-          <p>L'intelligenza artificiale è, inoltre, utilizzata per altre funzioni non direttamente connessi alla guida, ma volte a migliorare l'esperienza collettiva di viaggiatori e operatori, come ad esempio il conteggio automatico dei passeggeri o la raccolta di dati. Tramite l'utilizzo di tutte queste innovazioni ci si pone lo scopo di migliorare l'esperienza di viaggio fornita ai passeggeri.</p>
+          <p>L'intelligenza artificiale è, inoltre, utilizzata per altre funzioni non direttamente connesse alla guida, ma volte a migliorare l'esperienza collettiva di viaggiatori e operatori, come ad esempio il conteggio automatico dei passeggeri o la raccolta di dati. Tramite l'utilizzo di tutte queste innovazioni ci si pone lo scopo di migliorare l'esperienza di viaggio fornita ai passeggeri.</p>
         </div>
       </Panel>
 
